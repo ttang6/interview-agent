@@ -1,0 +1,29 @@
+2025-09-17 09:29:47,368 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 09:30:09,550 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: 52453f0c-5a5e-4103-aa9b-64e132e15516
+2025-09-17 09:30:09,555 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmp8lwu4mff.pdf
+2025-09-17 09:30:25,865 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmp8lwu4mff.pdf
+2025-09-17 09:33:47,541 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 09:34:10,142 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: 98bafecb-b914-4bbb-aaad-247a01db8f57
+2025-09-17 09:34:10,146 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmph57fadtl.pdf
+2025-09-17 09:34:33,394 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmph57fadtl.pdf
+2025-09-17 10:08:12,752 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 10:08:35,641 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: 70891767-5173-491c-8e77-d7ec8d094751
+2025-09-17 10:08:35,645 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmpl2yy5731.pdf
+2025-09-17 10:08:51,903 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmpl2yy5731.pdf
+2025-09-17 10:57:47,415 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 10:58:39,537 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 10:58:55,445 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: 434f513c-6380-4ce0-a772-a61bdea8954c
+2025-09-17 10:58:55,447 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmpfuc_lxwd.pdf
+2025-09-17 10:59:12,035 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmpfuc_lxwd.pdf
+2025-09-17 11:00:12,357 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 11:00:30,143 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: f07e6dff-7939-49e9-8fcd-c1df106abfbb
+2025-09-17 11:00:30,145 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmpyapvpht_.pdf
+2025-09-17 11:00:46,672 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmpyapvpht_.pdf
+2025-09-17 11:05:13,027 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 11:05:39,381 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: eee098f2-e090-46f0-bf57-a534ffdd8699
+2025-09-17 11:05:39,386 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmpy7jkpwdq.pdf
+2025-09-17 11:05:56,220 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmpy7jkpwdq.pdf
+2025-09-17 11:11:34,046 - pdf_parser - INFO - 启动PDF解析服务...
+2025-09-17 11:11:55,750 - pdf_parser - INFO - 收到PDF上传请求: 简历.pdf，会话ID: 4644c48a-aff2-460e-95f2-ec11d25ec317
+2025-09-17 11:11:55,753 - pdf_parser - DEBUG - 临时文件创建: C:\Users\18238\AppData\Local\Temp\tmpdicklot2.pdf
+2025-09-17 11:12:11,299 - pdf_parser - DEBUG - 清理临时文件: C:\Users\18238\AppData\Local\Temp\tmpdicklot2.pdf
