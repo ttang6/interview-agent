@@ -2,6 +2,7 @@ import json, uuid, os, time
 from pathlib import Path
 
 from src.state.initial import start_initial_interview
+from src.state.theory import start_theory_interview
 from src.state.project import start_project_interview
 from src.state.final import get_project_score
 
@@ -35,17 +36,25 @@ async def start_machine(session):
 
     # 调用异步版本的初始面试函数
     await start_initial_interview(session)
-    
-    if can_proceed(session):
-        set_state(session, "project")
-        print(f"状态转移至project")
-        start_project_interview(session)
-        
 
     if can_proceed(session):
-        set_state(session, "final")
-        print(f"状态转移至final")
-        get_project_score(session)
+        set_state(session, "theory")
+        print(f"状态转移至theory")
+        start_theory_interview(session)
+    
+    # if can_proceed(session):
+    #     set_state(session, "project")
+    #     print(f"状态转移至project")
+    #     start_project_interview(session)
+        
+
+    # if can_proceed(session):
+    #     set_state(session, "final")
+    #     print(f"状态转移至final")
+    #     get_project_score(session)
     
     set_state(session, "end")
     print(f"状态转移至end")
+    
+    # 面试结束后的清理工作
+    # await finalize_interview(session)

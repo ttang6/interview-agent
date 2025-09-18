@@ -16,9 +16,6 @@ from langchain_community.llms import Tongyi
 from config.api_config import DASHSCOPE_API_KEY
 from src.common.utils import parse_pdf
 from src.logger.logger import LoggerConfig, LogLevel
-# from src.state.initial import start_initial_interview
-# from src.state.project import start_project_interview
-# from src.state.final import get_project_score, generate_final_report
 from src.state.state_machine import start_machine
 
 # 初始化日志
@@ -105,7 +102,7 @@ async def upload_pdf(session_id: str, file: UploadFile = File(...)):
 async def start_interview():
     session_id = str(uuid.uuid4())
     print(f"会话ID: {session_id}\n")
-    save_path_root = f"./data/interview_history/{session_id}"
+    save_path_root = f"./data/session_history/{session_id}"
     save_dialog_path = os.path.join(save_path_root, "dialog")
     save_summary_path = os.path.join(save_path_root, "summary")
     # save_audio_path = os.path.join(save_path, "audio")

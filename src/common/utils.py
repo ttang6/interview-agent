@@ -1,12 +1,14 @@
 import pdfplumber
+import pdfplumber
 import os
 import yaml
 import json
 import re
 
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.messages import HumanMessage
 from langchain_community.llms import Tongyi
-from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 
 from config.api_config import DASHSCOPE_API_KEY
@@ -112,6 +114,29 @@ def update_test_status(resume_path, section, name):
         json.dump(resume, f, ensure_ascii=False, indent=4)
     
     print(f"更新{section}的{name}的已考核状态为True\n")
+
+
+def side_llm_request(prompt, user_input):
+    llm = Tongyi(api_key=DASHSCOPE_API_KEY, model_name="qwen-turbo", temperature=0.3)
+
+    formatted_prompt = prompt
+    message = HumanMessage(content=f"{formatted_prompt}\n\n用户输入：{user_input}")
+    
+    chain = llm | StrOutputParser()
+    return chain.invoke([message])
+
+
+def generate_question_tags(language, position):
+    initial_list = []
+    if language == "c++":
+        initial_list.append(["c++"])
+    if language == "c++11":
+        initial_list.append(["c++", "c++11"])
+    
+    if any(p in ['后端开发','全栈开发','大模型开发'] for p in position):
+        initial_list.append(['计算机网络', '操作系统', '数据库'])
+    
+    return initial_list
 
 
 if __name__ == "__main__":
